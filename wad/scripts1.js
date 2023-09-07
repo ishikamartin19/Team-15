@@ -21,6 +21,7 @@ const events = [
     }
 ];
 
+
 let loggedIn = false;
 
 function login() {
@@ -57,7 +58,9 @@ function displayEvents() {
             <p>Location: ${event.location}</p>
             <p>${event.description}</p>
             <p class="event-cost">$${event.cost}</p>
-            <button class="book-button" onclick="bookEvent(${event.id})">Book Now</button>
+            <button class="book-button" onclick="
+               
+                window.location.href = 'payment.html'">Book Now</button>
         `;
         eventList.appendChild(eventCard);
     });

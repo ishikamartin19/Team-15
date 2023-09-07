@@ -1,23 +1,23 @@
-
 body {
     margin: 0;
     padding: 0;
-    background-image: url('BackImage3.jpg');
+    background-image: url('bgf.png');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 h1 {
-    font-family: cursive;
-    color:rgb(228, 219, 226)
+    font-family: serif;
 }
-h3 {
-    font-family:cursive;
+h5 {
+    font-family: sans-serif;
 }
 
 /* Rest of your styling */
 header {
     background-color: rgba(0, 0, 0, 0.6);
-    color: #fcf9fc;
+    color: #fff;
     text-align: center;
     padding: 1rem;
 }
@@ -27,10 +27,8 @@ main {
 }
 
 footer {
-    background-color: rgba(231, 133, 185, 0.6);
-    color: #34052f;
-    font-size: larger;
-    font-family: cursive;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
     text-align: center;
     padding: 1rem;
     position: fixed;
@@ -56,23 +54,44 @@ footer {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
 }
 .event-image {
-    width:100px;
-    height: 100px;
+    width:20px;
+    height: 20px;
     border-radius: 5px;
 }
 .event-details {
     flex: 1;
 }
 
-.event-cost {
-    font-weight: bold;
-    color: #25c71d;
-}
-.book-button {
-    background-color: #00080c;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
+ul {
+    list-style-type: none;
+    float: left;
+    padding: 12px;
+    position: fixed;
+    overflow: hidden;
+    margin-top: -2%;
+    background-color: #0b0404;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    width: 950pt;
+    height: 50pt;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgb(81, 78, 78);
+  }
+  .active {
+    background-color:black;
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <style>
+        .container {
+            /* Set the background image for the container */
+            background-image: url('blank2.png'); /* Replace 'background-image.jpg' with your image file path */
+            background-image: cover; /* Adjust how the background image is displayed */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            width: 200opx;
+            height: 700px;
+            /* Set the height of the container */
+             /* Enable positioning of child elements */
+        }
+
+        .overlay-image {
+            /* Position the overlay image */
+            padding-left: 40%;
+            height:250pt;
+            width:250pt;
+            padding-top: 100px; /* Adjust the top position as needed */
+            left: 100px; /* Adjust the left position as needed */
+            z-index: 1; /* Ensure the overlay image appears above the background */
+        }
+        .overlay-image2 {
+            /* Position the overlay image */
+            padding-left: 10%;
+            height:250pt;
+            width:250pt;
+            padding-top: 0px; /* Adjust the top position as needed */
+            left: 100px; /* Adjust the left position as needed */
+            z-index: 1; /* Ensure the overlay image appears above the background */
+        }
+        .button1{
+            text-align: center;
+            position: absolute;
+            padding-top: 15%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+       
+                  function payment()
+                  {
+                    alert('payment is being processed')
+                  }
+                </script>
+            </form>
+    </script>
+    <div class="container">
+        <!-- Overlay Image -->
+        <img class="overlay-image" src="pay.png" alt="Overlay Image">
+        <img class="overlay-image2" src="pay2.png" alt="Overlay Image">
+        <h1 style="padding-left: 40%;font-family: cursive;">use the above scanners to pay the event</h1>
+        <div class="button1">
+            <button style="background-color: #8ab5d9;text-align: center;"  type="button" onclick="payment()">PaymentDone</button>
+        </div>
+    </div>
+</body>
+</html>
