@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventify</title>
+</head>
+<style>
+   body {
+    margin: 0;
+    padding: 0;
+    background-image: url('blank.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+}
+
+
+#login-form {
+    background-color: #174971;
+   
+    border-radius: 10px;
+   
+    padding: 2rem;
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(27, 18, 92, 0.1);
+    box-align: left;
+}
+#login1-form
+{
+    background-color: rgba(88, 123, 139, 0.9);
+    
+    border-radius: 10px;
+   
+    padding: 2rem;
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(27, 18, 92, 0.1);
+    box-align: left;
+
+}
+
+
+#button
+{
+font-size: 24px;
+padding: 15px 30px;
+background-color: #174971;
+color:black;
+border-radius:5px;
+cursor:pointer;
+text-align: center;
+position: absolute;
+margin-top: 50px;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+</style>
+<body>
+   <script>
+    function login()
+    {
+        if((username!=null) && (password!=null ))
+        window.alert('login successfully');
+    else
+    window.alert('enter valid creditentials');
+    }
+   </script>
+    <main>
+        <div id="login-form">
+      <h2>Login</h2>
+            <form id="login1-form">
+              <b>username:</b> <input type="text" id="username" placeholder="enter username" required><br>
+                <br><b>Password:</b> <input type="password" id="password" placeholder="enter password" required><br>
+                <br>
+                <br>
+                
+                <button style="background-color: #174971;"  type="button" onclick="login();">Login</button>
+            </form>
+        </div>
+       <button id="button" onclick="location.href='reachus.html'">REACH US</button>
+    </main>
+   
+   
+</body>
+</html>
